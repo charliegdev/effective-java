@@ -1,4 +1,7 @@
 import creating_destructing_objects.NutritionFacts;
+import misc.Day;
+import misc.EnumTest;
+import misc.PlanetTest;
 
 public class App {
   public static void main(String[] args) {
@@ -9,5 +12,10 @@ public class App {
         new NutritionFacts.Builder(240, 8).calories(100).sodium(35).carbohydrate(27).build();
 
     System.out.println(cocaCola);
+
+    EnumTest firstDay = new EnumTest(Day.MONDAY);
+    firstDay.tellItLikeItIs();
+
+    PlanetTest.test(args);
   }
 }
